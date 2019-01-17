@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# sonarqube
+.scannerwork
+.sonarlint
+sonar-project.properties

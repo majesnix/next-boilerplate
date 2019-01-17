@@ -7,5 +7,5 @@ import { IHomePage } from '@Interfaces';
 //#endregion Interface Imports
 
 export type IStore = {
-    home: IHomePage.IStateProps
-}
+  home: IHomePage.IStateProps;
+};

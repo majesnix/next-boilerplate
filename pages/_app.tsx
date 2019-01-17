@@ -2,8 +2,8 @@
 import App, { Container } from 'next/app';
 import * as React from 'react';
 
-import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
+import { Provider } from 'react-redux';
 //#endregion Global Imports
 
 //#region Local Imports
@@ -15,28 +15,27 @@ import { IApp } from '@Interfaces';
 //#endregion Interface Imports
 
 class MyApp extends App<IApp.IProps> {
-    static async getInitialProps(props: any) {
-        let pageProps = {};
+  public static async getInitialProps(props: any): Promise<{}> {
+	let pageProps = {};
 
-        if (props.Component.getInitialProps) {
-            pageProps = await props.Component.getInitialProps(props.ctx);
-        }
+	if (props.Component.getInitialProps) {
+		pageProps = await props.Component.getInitialProps(props.ctx);
+	}
 
-        return { pageProps };
-    }
+	return { pageProps };
+  }
 
+  public render(): JSX.Element {
+	const { Component, pageProps, store: propStore } = this.props;
 
-    render(): JSX.Element {
-        const { Component, pageProps, store } = this.props;
-
-        return (
-            <Container>
-                <Provider store={store}>
-                    <Component {...pageProps} />
-                </Provider>
-            </Container>
-        );
-    }
+	return (
+		<Container>
+		<Provider store={propStore}>
+			<Component {...pageProps} />
+		</Provider>
+		</Container>
+	);
+  }
 }
 
 export default withRedux(store)(MyApp);

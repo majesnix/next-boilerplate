@@ -1,7 +1,3 @@
-
-<img src="https://github.com/pankod/next-boilerplate/blob/master/banner.jpg" alt="Performance oriented Next.js application boilerplate with Redux, Typescript, Express.js and Sass." align="center" />
-
-<br/>
 <div align="center" >Performance oriented Next.js application boilerplate with Redux, Typescript, Express.js and Sass.</div>
 <br/>
 
