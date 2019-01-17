@@ -15,7 +15,7 @@ import { IApp } from '@Interfaces';
 //#endregion Interface Imports
 
 class MyApp extends App<IApp.IProps> {
-	public static async getInitialProps(props: any): Promise<DefaultAppIProps> {
+  public static async getInitialProps(props: any): Promise<DefaultAppIProps> {
 	let pageProps = {};
 
 	if (props.Component.getInitialProps) {

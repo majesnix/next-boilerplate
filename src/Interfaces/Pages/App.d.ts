@@ -4,7 +4,7 @@ import { Props } from 'react';
 
 declare module IApp {
   export interface IProps extends Props<{}> {
-	tore: any;
+	store: any;
   }
 
   export interface IState {}
