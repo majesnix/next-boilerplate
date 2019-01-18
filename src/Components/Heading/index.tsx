@@ -1,13 +1,13 @@
 //#region Global Imports
-import * as React from 'react';
+import * as React from "react";
 //#endregion Global Imports
 
 //#region Local Imports
-import './style.scss';
+import "./style.scss";
 //#endregion Local Imports
 
 //#region Interface Imports
-import { IHeading } from '@Interfaces';
+import { IHeading } from "@Interfaces";
 //#endregion Interface Imports
 
 export class Heading extends React.Component<IHeading.IProps, IHeading.IState> {
@@ -15,7 +15,7 @@ export class Heading extends React.Component<IHeading.IProps, IHeading.IState> {
 	const { text } = this.props;
 
 	return (
-		<div className={'title'}>
+		<div className={"title"}>
 		<span className="title__back">{text}</span>
 		<span className="title__front">{text}</span>
 		</div>

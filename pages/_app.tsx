@@ -1,17 +1,17 @@
 //#region Global Imports
-import App, { Container, DefaultAppIProps } from 'next/app';
-import * as React from 'react';
+import App, { Container, DefaultAppIProps } from "next/app";
+import * as React from "react";
 
-import withRedux from 'next-redux-wrapper';
-import { Provider } from 'react-redux';
+import withRedux from "next-redux-wrapper";
+import { Provider } from "react-redux";
 //#endregion Global Imports
 
 //#region Local Imports
-import store from '@Redux/store';
+import store from "@Redux/store";
 //#endregion Local Imports
 
 //#region Interface Imports
-import { IApp } from '@Interfaces';
+import { IApp } from "@Interfaces";
 //#endregion Interface Imports
 
 class MyApp extends App<IApp.IProps> {
