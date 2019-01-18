@@ -175,7 +175,7 @@
       }
     ],
     "prefer-template": [true, "allow-single-concat"],
-    "quotemark": [true, "single", "jsx-double"],
+    "quotemark": [true, "double", "jsx-double"],
     "return-undefined": true,
     "semicolon": [true, "always"],
     "space-before-function-paren": [false, "always"],
