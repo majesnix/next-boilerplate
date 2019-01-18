@@ -24,16 +24,16 @@ export const HomeReducer = (
   action: IAction<IMapPayload>
 ) => {
   switch (action.type) {
-	case ActionConsts.Home.SetReducer:
-		return {
-		...state,
-		...action.payload
-		};
+    case ActionConsts.Home.SetReducer:
+      return {
+        ...state,
+        ...action.payload
+      };
 
-	case ActionConsts.Home.ResetReducer:
-		return INITIAL_STATE;
+    case ActionConsts.Home.ResetReducer:
+      return INITIAL_STATE;
 
-	default:
-		return state;
+    default:
+      return state;
   }
 };

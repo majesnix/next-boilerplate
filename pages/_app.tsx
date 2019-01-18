@@ -16,25 +16,25 @@ import { IApp } from "@Interfaces";
 
 class MyApp extends App<IApp.IProps> {
   public static async getInitialProps(props: any): Promise<DefaultAppIProps> {
-	let pageProps = {};
+    let pageProps = {};
 
-	if (props.Component.getInitialProps) {
-		pageProps = await props.Component.getInitialProps(props.ctx);
-	}
+    if (props.Component.getInitialProps) {
+      pageProps = await props.Component.getInitialProps(props.ctx);
+    }
 
-	return { pageProps };
+    return { pageProps };
   }
 
   public render(): JSX.Element {
-	const { Component, pageProps, store: propStore } = this.props;
+    const { Component, pageProps, store: propStore } = this.props;
 
-	return (
-		<Container>
-		<Provider store={propStore}>
-			<Component {...pageProps} />
-		</Provider>
-		</Container>
-	);
+    return (
+      <Container>
+        <Provider store={propStore}>
+          <Component {...pageProps} />
+        </Provider>
+      </Container>
+    );
   }
 }
 

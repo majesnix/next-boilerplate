@@ -4,7 +4,7 @@ import { Props } from "react";
 
 declare module IHeading {
   export interface IProps extends Props<{}> {
-	text: string;
+    text: string;
   }
 
   export interface IState {}

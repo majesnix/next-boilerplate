@@ -10,7 +10,7 @@ import Reducers from "./Reducers";
 
 export default () =>
   createStore(
-	Reducers,
-	{},
-	composeWithDevTools(applyMiddleware(thunkMiddleware))
+    Reducers,
+    {},
+    composeWithDevTools(applyMiddleware(thunkMiddleware))
   );
