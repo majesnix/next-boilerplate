@@ -1,13 +1,13 @@
 //#region Global Imports
-import * as React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators, Dispatch } from 'redux';
+import * as React from "react";
+import { connect } from "react-redux";
+import { bindActionCreators, Dispatch } from "redux";
 //#endregion Global Imports
 
 //#region Interface Imports
-import { HomeActions } from '@Actions';
-import { Heading } from '@Components';
-import { IHomePage, IStore } from '@Interfaces';
+import { HomeActions } from "@Actions";
+import { Heading } from "@Components";
+import { IHomePage, IStore } from "@Interfaces";
 //#endregion Interface Imports
 
 export class HomePage extends React.Component<
@@ -15,12 +15,12 @@ export class HomePage extends React.Component<
   IHomePage.IState
 > {
   public render(): JSX.Element {
-	return (
-		<div className="title">
-		Hello!
-		<Heading text="World!" />
-		</div>
-	);
+    return (
+      <div className="title">
+        Hello!
+        <Heading text="World!" />
+      </div>
+    );
   }
 }
 

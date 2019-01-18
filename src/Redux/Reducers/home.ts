@@ -2,11 +2,11 @@
 //#endregion Global Imports
 
 //#region Local Imports
-import { ActionConsts } from '@Definitions';
+import { ActionConsts } from "@Definitions";
 //#endregion Local Imports
 
 //#region Interface Imports
-import { IAction, IHomePage } from '@Interfaces';
+import { IAction, IHomePage } from "@Interfaces";
 //#endregion Interface Imports
 
 /**
@@ -24,16 +24,16 @@ export const HomeReducer = (
   action: IAction<IMapPayload>
 ) => {
   switch (action.type) {
-	case ActionConsts.Home.SetReducer:
-		return {
-		...state,
-		...action.payload
-		};
+    case ActionConsts.Home.SetReducer:
+      return {
+        ...state,
+        ...action.payload
+      };
 
-	case ActionConsts.Home.ResetReducer:
-		return INITIAL_STATE;
+    case ActionConsts.Home.ResetReducer:
+      return INITIAL_STATE;
 
-	default:
-		return state;
+    default:
+      return state;
   }
 };

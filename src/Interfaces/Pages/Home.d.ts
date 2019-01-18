@@ -1,5 +1,5 @@
 //#region Global Imports
-import { Props } from 'react';
+import { Props } from "react";
 //#endregion Global Imports
 
 declare module IHomePage {
@@ -10,14 +10,14 @@ declare module IHomePage {
   export interface IStateProps {}
 
   export interface IDispatchProps {
-	Map(payload: Actions.IMapPayload): Actions.IMapResponse;
+    Map(payload: Actions.IMapPayload): Actions.IMapResponse;
   }
 
   export type IProps = IOwnProps & IDispatchProps;
 
   module Actions {
-	export interface IMapPayload {}
+    export interface IMapPayload {}
 
-	export interface IMapResponse {}
+    export interface IMapResponse {}
   }
 }

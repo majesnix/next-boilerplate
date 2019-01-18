@@ -1,10 +1,10 @@
 //#region Global Imports
-import { Props } from 'react';
+import { Props } from "react";
 //#endregion Global Imports
 
 declare module IApp {
   export interface IProps extends Props<{}> {
-	store: any;
+    store: any;
   }
 
   export interface IState {}
