@@ -23,4 +23,5 @@ app.prepare().then(() => {
   });
 
   server.listen(PORT);
+  console.log(`Running on http://localhost:${PORT}`);
 });
